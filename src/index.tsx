@@ -4,7 +4,7 @@ import App       from './App';
 
 
 import './styles/App.css';
-
+import './styles/MediaQuerries.css';
 
 
 const root = ReactDOM.createRoot(

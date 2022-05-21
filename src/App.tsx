@@ -1,16 +1,16 @@
-import React                            from 'react';
-import { StreamChat }                   from 'stream-chat';
-import { Chat }                         from 'stream-chat-react';
-import Cookies                          from 'universal-cookie';
-import TeenyiconsMessageTextAltOutline  from './icons/TeenyiconsMessageTextAltOutline';
+import React   from 'react';
+import Title   from './components/Title';
+
 
 
 function App() {
 
+
+
   return (
 
     <div className="App">
-      <h1> Messagerie sécurisé <TeenyiconsMessageTextAltOutline /> </h1> 
+      <Title />
     </div>
 
   );
