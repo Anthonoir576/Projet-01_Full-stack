@@ -3,7 +3,7 @@ import React                            from 'react';
 import Title                            from './components/Title';
 import SignIn                           from './components/SignIn';
 import Messagerie                       from './components/Messagerie';
-
+import NoPage                           from "./components/NoPage";
 
 
 
@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Title />
       <Routes>
-        <Route  path='*'            element={ <Messagerie /> } />
+        <Route  path='*'            element={ <NoPage     /> } />
         <Route  path='/'            element={ <SignIn     /> } />
         <Route  path='/messagerie'  element={ <Messagerie /> } />
       </Routes>
