@@ -1,11 +1,20 @@
 body {
   margin: 0;
+  background: black;
   /* font-family: 'Epilogue', sans-serif;
   font-family: 'Roboto Mono', monospace; */
 }
+
+/* #02F202 vert  */
 
 .App h1 {
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   text-align: center;
+  color: #02F202;
+  text-transform: uppercase;
+}
+
+.App h1 svg {
+  transform: translate(10px,4px);
 }
