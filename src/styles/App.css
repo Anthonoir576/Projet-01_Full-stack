@@ -4,3 +4,8 @@ body {
   font-family: 'Roboto Mono', monospace; */
 }
 
+.App h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  text-align: center;
+}
