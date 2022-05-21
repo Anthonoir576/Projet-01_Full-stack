@@ -1,6 +1,6 @@
-import React   from 'react';
-import Title   from './components/Title';
-
+import React          from 'react';
+import Title          from './components/Title';
+import { ChatEngine } from 'react-chat-engine';
 
 
 function App() {
@@ -10,7 +10,10 @@ function App() {
   return (
 
     <div className="App">
-      <Title />
+      <ChatEngine 
+      
+        
+      />
     </div>
 
   );

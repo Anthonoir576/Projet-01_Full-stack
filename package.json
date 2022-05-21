@@ -1,5 +1,5 @@
 {
-  "name"                           : "messagerie-web-securise",
+  "name"                           : "messagerie-securisee-prive",
   "version"                        : "0.1.0",
   "private"                        : true,
   "dependencies": {
@@ -45,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-chat-engine"            : "^1.11.22"
   }
 }

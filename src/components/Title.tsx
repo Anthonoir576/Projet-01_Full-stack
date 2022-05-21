@@ -4,7 +4,7 @@ import TeenyiconsMessageTextAltOutline from '../icons/TeenyiconsMessageTextAltOu
 const Title = () => {
     return (
         <div>
-            <h1> Messagerie web sécurisé <TeenyiconsMessageTextAltOutline /> </h1>
+            <h1> Messagerie sécurisée privé <TeenyiconsMessageTextAltOutline /> </h1>
         </div>
     );
 };
