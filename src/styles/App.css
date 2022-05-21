@@ -6,7 +6,7 @@ body {
   text-shadow              : 0 0 10px #33FF33;
 }
 
-.App h1 {
+h1 {
   letter-spacing           : 5px;
   margin                   : 3rem auto 0 auto;
   font-family              : 'Roboto Mono', monospace;

@@ -1,9 +1,9 @@
-import React          from 'react';
-import Title          from './components/Title';
-import { Routes, 
-  Route,
-  BrowserRouter,
-  Navigate }          from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import React                            from 'react';
+import Title                            from './components/Title';
+import SignIn                           from './components/SignIn';
+import Messagerie                       from './components/Messagerie';
+
 
 
 
@@ -14,9 +14,10 @@ function App() {
   return (
 
     <BrowserRouter>
-    <Title />
+      <Title />
       <Routes>
-        <Route  path='/'            element={ <signIn />     } />
+        <Route  path='*'            element={ <Messagerie /> } />
+        <Route  path='/'            element={ <SignIn     /> } />
         <Route  path='/messagerie'  element={ <Messagerie /> } />
       </Routes>
     </BrowserRouter>
