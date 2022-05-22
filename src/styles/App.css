@@ -52,3 +52,33 @@ h1 {
   filter                   : drop-shadow(0 0 10px #33FF33);
 }
 /* ------------------------------------------ */
+
+
+
+/* ------------ Se connecter ------------ */
+.sign-in-container {
+
+}
+.sign-in-container h2 {
+  margin-top               : 5rem;
+  text-align               : center;
+}
+
+/* effet sur l'underscore */
+span.console-underscore {
+  display                  : inline-block;
+  position                 : relative;
+  top                      : -0.2em;
+  left                     : 10px;
+  opacity                  : 0;
+  animation : effect-underscore 1s infinite;
+}
+@keyframes effect-underscore {
+  from {
+    opacity: 0;
+  }
+   to {
+    opacity: 1;
+   }
+}
+/* -------------------------------------- */
