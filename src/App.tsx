@@ -18,8 +18,8 @@ function App() {
       <Title />
       <Routes>
         {/* <Route  path='*'            element={ <NoPage     /> } /> */}
-        <Route  path='/'            element={ <SignIn     /> } />
-        <Route  path='/messagerie'  element={ <Messagerie /> } />
+        <Route  path='Projet-01_Full-stack_client/'            element={ <SignIn     /> } />
+        <Route  path='Projet-01_Full-stack_client/messagerie'  element={ <Messagerie /> } />
       </Routes>
       <Footer />
     </BrowserRouter>
