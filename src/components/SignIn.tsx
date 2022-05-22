@@ -43,9 +43,9 @@ const SignIn = () => {
                     </div>
                     <NavLink to={`messagerie?name=${name}&room=${room}`}
                              onClick={(event? :any) => {
-                                 if (!name || !room) {
+                                if (!name || !room) {
                                     event.preventDefault();
-                                 };
+                                };
                              }}
                     >
                         <button type='submit' className='btn-submit-form'>Se connecter</button>
