@@ -1,5 +1,4 @@
 import React                           from 'react';
-import TeenyiconsMessageTextAltOutline from '../icons/TeenyiconsMessageTextAltOutline';
 import IcRoundSecurity                 from '../icons/IcRoundSecurity';
 
 const Title = () => {
