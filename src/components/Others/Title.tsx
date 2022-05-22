@@ -1,5 +1,5 @@
 import React                           from 'react';
-import IcRoundSecurity                 from '../icons/IcRoundSecurity';
+import IcRoundSecurity                 from '../../icons/IcRoundSecurity';
 
 const Title = () => {
     return (

@@ -1,9 +1,9 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import React                            from 'react';
-import Title                            from './components/Title';
-import SignIn                           from './components/SignIn';
-import Messagerie                       from './components/Messagerie';
-import Footer from "./components/Footer";
+import Title                            from './components/Others/Title';
+import SignIn                           from './components/Sign-in/SignIn';
+import Messagerie                       from './components/Messagerie/Messagerie';
+import Footer                           from "./components/Others/Footer";
 // import NoPage                           from "./components/NoPage";
 
 
