@@ -42,7 +42,7 @@ const SignIn = () => {
                             </strong> 
                             Identifiant Groupe : 
                         </label>
-                        <input type="text"
+                        <input type="password"
                                placeholder={room} 
                                className='sign-in-input'
                                id='sign-in-room' 
