@@ -1,6 +1,6 @@
 {
   "name"                           : "messagerie-securisee-prive",
-  "homepage"                       : "https://Anthonoir576.github.io/Projet-01_Full-stack_client",
+  "homepage"                       : "https://Anthonoir576.github.io/Projet-01_Full-stack_client/",
   "version"                        : "0.1.0",
   "private"                        : true,
   "dependencies": {
