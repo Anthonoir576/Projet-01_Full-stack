@@ -101,6 +101,8 @@ span.console-underscore {
   color                    : #66FF66;
   text-shadow              : 0 0 10px #33FF33;
   letter-spacing           : 2px;
+  font-family              : 'Roboto Mono', monospace;
+  text-transform           : uppercase;
 }
 .sign-in .input-1 {
   margin-bottom            : 2rem;
