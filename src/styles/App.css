@@ -126,16 +126,18 @@ span.console-underscore {
   font-weight              : 900;
   letter-spacing           : 2px;
   border-radius            : 2px;
-  box-shadow               :  0 0 10px 1px#33FF33;
+  box-shadow               :  0 0 4px 1px#33FF33;
 }
 .sign-in button:hover {
-  animation                : effect-hover-btn 200ms ease-in-out both;
+  animation                : effect-hover-btn 300ms ease-in-out both;
 }
 @keyframes effect-hover-btn {
   from {
+    box-shadow             :  0 0 4px 1px#33FF33;
     width                  : 65%;
   }
   to {
+    box-shadow             :  0 0 15px 1px#33FF33;
     width                  : 55%;
   }
 }

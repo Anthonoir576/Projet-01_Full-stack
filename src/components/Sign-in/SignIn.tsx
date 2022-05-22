@@ -40,7 +40,7 @@ const SignIn = () => {
                             <strong>
                                 &gt;.&thinsp;
                             </strong> 
-                            Identifiant Salon : 
+                            Identifiant Groupe : 
                         </label>
                         <input type="text"
                                placeholder={room} 
