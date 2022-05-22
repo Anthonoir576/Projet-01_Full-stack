@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Projet-01_Full-stack_client/static/css/main.2edd6879.css",
+    "main.js": "/Projet-01_Full-stack_client/static/js/main.0a2f0d24.js",
+    "index.html": "/Projet-01_Full-stack_client/index.html",
+    "main.2edd6879.css.map": "/Projet-01_Full-stack_client/static/css/main.2edd6879.css.map",
+    "main.0a2f0d24.js.map": "/Projet-01_Full-stack_client/static/js/main.0a2f0d24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2edd6879.css",
+    "static/js/main.0a2f0d24.js"
+  ]
+}
