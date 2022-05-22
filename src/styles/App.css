@@ -58,9 +58,6 @@ h1 svg {
 
 
 /* ------------ Se connecter ------------ */
-.sign-in-container {
-
-}
 .sign-in-container h2 {
   margin-top               : 5rem;
   text-align               : center;
@@ -73,14 +70,14 @@ span.console-underscore {
   top                      : -0.2em;
   left                     : 10px;
   opacity                  : 0;
-  animation : effect-underscore 1s infinite;
+  animation                : effect-underscore 1s infinite;
 }
 @keyframes effect-underscore {
   from {
-    opacity: 0;
+    opacity                : 0;
   }
    to {
-    opacity: 1;
+    opacity                : 1;
    }
 }
 
@@ -143,5 +140,4 @@ span.console-underscore {
   text-transform           : uppercase;
   font-family              : 'Roboto Mono', monospace;
 }
-
 /* -------------------------------------- */

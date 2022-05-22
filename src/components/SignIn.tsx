@@ -31,7 +31,7 @@ const SignIn = () => {
                         />
                     </div>
                     <div className='sign-in-flex  input-2'>
-                        <label htmlFor="sign-in-room">- Mot de passe :</label>
+                        <label htmlFor="sign-in-room">- Salon :</label>
                         <input type="text"
                                placeholder={room} 
                                className='sign-in-input'
@@ -41,8 +41,8 @@ const SignIn = () => {
                                 }} 
                         />
                     </div>
-                    <NavLink to='/messagerie' >
-                        <button type='submit' className='btn-submit-form'>S'enregistrer</button>
+                    <NavLink to={`/messagerie?name=${name}&room=${room}`} >
+                        <button type='submit' className='btn-submit-form'>Se connecter</button>
                     </NavLink>
                 </form>
             </div>
