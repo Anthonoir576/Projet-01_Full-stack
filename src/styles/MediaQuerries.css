@@ -7,6 +7,20 @@
     h1 {
         font-size                : 25px;
     }
+    .sign-in input, button {
+        width                    : 95%;
+    }
+    @keyframes effect-hover-btn {
+        from {
+          box-shadow             :  0 0 4px 1px#33FF33;
+          width                  : 95%;
+        }
+        to {
+          box-shadow             :  0 0 15px 1px#33FF33;
+          width                  : 90%;
+        }
+      }
+      
 }
 @media only screen and (max-width: 530px) {
     h1 {
