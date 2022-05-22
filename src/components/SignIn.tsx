@@ -20,7 +20,12 @@ const SignIn = () => {
                 </h2>
                 <form>
                     <div className='sign-in-flex input-1'>
-                        <label htmlFor="sign-in-name">- Nom :</label>
+                        <label htmlFor="sign-in-name">
+                            <strong>
+                                &gt;.&thinsp;
+                            </strong>
+                            Nom :
+                        </label>
                         <input type="text" 
                                placeholder={name} 
                                className='sign-in-input' 
@@ -31,7 +36,12 @@ const SignIn = () => {
                         />
                     </div>
                     <div className='sign-in-flex  input-2'>
-                        <label htmlFor="sign-in-room">- Salon :</label>
+                        <label htmlFor="sign-in-room">
+                            <strong>
+                                &gt;.&thinsp;
+                            </strong> 
+                            Salon : 
+                        </label>
                         <input type="text"
                                placeholder={room} 
                                className='sign-in-input'
@@ -45,7 +55,9 @@ const SignIn = () => {
                              onClick={(event? :any) => {
                                 if (!name || !room) {
                                     event.preventDefault();
-                                };
+                                } else {
+                                    return null;
+                                }
                              }}
                     >
                         <button type='submit' className='btn-submit-form'>Se connecter</button>
