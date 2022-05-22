@@ -19,6 +19,7 @@ const Messagerie = () => {
         setName(name);
         setRoom(room);
 
+        console.log(socket);
         
     }, [])
 
