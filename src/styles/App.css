@@ -77,7 +77,7 @@ span.console-underscore {
   top                      : -0.2em;
   left                     : 10px;
   opacity                  : 0;
-  animation                : effect-underscore 1s infinite;
+  animation                : effect-underscore 1150ms infinite;
 }
 @keyframes effect-underscore {
   from {
