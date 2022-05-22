@@ -4,7 +4,6 @@ body {
   background               : #282828;
   color                    : #66FF66;
   text-shadow              : 0 0 10px #33FF33;
-  overflow                 : hidden;
   width                    : 100vw;
   height                   : 100vh;
 }
@@ -14,6 +13,9 @@ body {
   flex-direction           : column;
   min-width                : 100vw;
   min-height               : 100vh;
+}
+* {
+  overflow                 : hidden;
 }
 /* -------------------------------- */
 
