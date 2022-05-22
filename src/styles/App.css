@@ -119,7 +119,7 @@ span.console-underscore {
 .sign-in button {
   margin-top               : 1rem;
   cursor                   : pointer;
-  height                   : 30px;
+  height                   : 35px;
   background               : #66FF66;
   border                   : none;
   color                    : #282828;
@@ -136,7 +136,7 @@ span.console-underscore {
     width                  : 65%;
   }
   to {
-    width                  : 60%;
+    width                  : 55%;
   }
 }
 
