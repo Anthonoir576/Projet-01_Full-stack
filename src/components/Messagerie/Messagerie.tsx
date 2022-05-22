@@ -6,7 +6,9 @@ import io                             from 'socket.io-client';
 const Messagerie = () => {
 
     useEffect(() => {
+
         const { name, room } = queryString.parse(document.location.search);
+        
         console.log(name, room);
  
 
