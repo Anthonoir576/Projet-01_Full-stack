@@ -19,8 +19,8 @@ const SignIn = () => {
                     Se connecter <Underscore />
                 </h2>
                 <form>
-                    <div className='sign-in-flex'>
-                        <label htmlFor="sign-in-name">Nom :</label>
+                    <div className='sign-in-flex input-1'>
+                        <label htmlFor="sign-in-name">- Nom :</label>
                         <input type="text" 
                                placeholder={name} 
                                className='sign-in-input' 
@@ -30,8 +30,8 @@ const SignIn = () => {
                                }} 
                         />
                     </div>
-                    <div className='sign-in-flex'>
-                        <label htmlFor="sign-in-room">Mot de passe :</label>
+                    <div className='sign-in-flex  input-2'>
+                        <label htmlFor="sign-in-room">- Mot de passe :</label>
                         <input type="text"
                                placeholder={room} 
                                className='sign-in-input'

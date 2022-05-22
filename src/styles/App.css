@@ -102,6 +102,11 @@ span.console-underscore {
   text-shadow              : 0 0 10px #33FF33;
   letter-spacing           : 2px;
 }
+.sign-in .input-1 {
+  margin-bottom            : 2rem;
+}
+
+
 .sign-in button {
   margin-top               : 1rem;
   cursor                   : pointer;
@@ -125,11 +130,15 @@ span.console-underscore {
     width                  : 60%;
   }
 }
+
+
 .sign-in .sign-in-flex label {
   display                  : block;
   text-align               : left;
   width                    : 65%;
   margin                   : .5rem auto 0 auto;
+  text-transform           : uppercase;
+  font-family              : 'Roboto Mono', monospace;
 }
 
 /* -------------------------------------- */
