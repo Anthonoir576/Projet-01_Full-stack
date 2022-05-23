@@ -20,7 +20,7 @@ const Messagerie = () => {
 
         console.log(socket);
         
-    }, []);
+    });
 
     return (
         <div>
