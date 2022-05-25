@@ -13,12 +13,17 @@ const Messagerie = () => {
 
         const { name, room } = queryString.parse(document.location.search);
 
-        socket = io(ENDPOINT);
+        socket = io(ENDPOINT, {
+            withCredentials: true
+            // extraHeaders: {
+            //     "monHeader": "monHeader"
+            // }
+        });
 
         setName(name);
         setRoom(room);
 
-        console.log(socket);
+        // console.log(socket);
         
     }, [name, room]);
 
