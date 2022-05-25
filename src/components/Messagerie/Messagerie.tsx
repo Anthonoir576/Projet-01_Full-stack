@@ -15,9 +15,6 @@ const Messagerie = () => {
 
         socket = io(ENDPOINT, {
             withCredentials: true
-            // extraHeaders: {
-            //     "monHeader": "monHeader"
-            // }
         });
 
         setName(name);
