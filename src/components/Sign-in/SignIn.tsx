@@ -57,10 +57,12 @@ const SignIn = () => {
                                     event.preventDefault();
                                 } else {
                                     return null;
-                                }
+                                };
                              }}
                     >
-                        <button type='submit' className='btn-submit-form'>Se connecter</button>
+                        <button type='submit' className='btn-submit-form'>
+                            Se connecter
+                        </button>
                     </NavLink>
                 </form>
             </div>
