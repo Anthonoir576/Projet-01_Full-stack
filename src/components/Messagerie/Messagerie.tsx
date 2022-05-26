@@ -24,27 +24,38 @@ const Messagerie = () => {
         setName(name);
         setRoom(room);
         
-        socket.emit('join', { name: name, room: room }, () => {
-        
+        socket.emit('join', { name: name, room: room }, (error) => {
+            if(error) {
+                alert(error);
+            };
         });
 
 
-        return () => {
-            socket.emit('disconnect');
-            socket.off();    
-        };
+        // return () => {
+        //     socket.emit('disconnect');
+        //     socket.off();    
+        // };
 
     }, [ENDPOINT, Location]);
 
     useEffect(() => {
         socket.on('message', (message? :any) => {
-            setMessages([...messages, message]);
+            setMessages((messages? :any) => [...messages, message]);
         });
-    }, [messages]);
+    }, []);
+
+
 
     const sendMessage = (e? :any) => {
+        e.preventDefault();
 
+        if (message) {
+            socket.emit('sendMessage', message, () => sendMessage(''));
+        };
     };
+
+    console.log(message, messages);
+    
 
     return (
         <>
@@ -52,10 +63,10 @@ const Messagerie = () => {
                 <div className='read-message'>
                     <input value={message} 
                         onChange={ e =>  setMessage(e.target.value) }
-                        onKeyPress={ e => e.key === 'Enter' ? sendMessage(e) : null } 
+                        // onKeyPress={ e => e.key === 'Enter' ? sendMessage(e) : null } 
                     />
                     <button type='submit'
-                            onClick={ e => sendMessage(e) }
+                            onClick={ (e) => sendMessage(e) }
                     >
                         Envoyer
                     </button>
