@@ -26,7 +26,8 @@ const Messagerie = () => {
         
         socket.emit('join', { name: name, room: room }, (error) => {
             if(error) {
-                alert(error);
+                // alert(error);
+                console.log(error);
             };
         });
 
@@ -50,7 +51,7 @@ const Messagerie = () => {
         e.preventDefault();
 
         if (message) {
-            socket.emit('sendMessage', message, () => sendMessage(''));
+            socket.emit('sendMessage', message, () => setMessage(''));
         };
     };
 
@@ -61,11 +62,13 @@ const Messagerie = () => {
         <>
             <div className='read-message-container'>
                 <div className='read-message'>
-                    <input value={message} 
-                        onChange={ e =>  setMessage(e.target.value) }
-                        // onKeyPress={ e => e.key === 'Enter' ? sendMessage(e) : null } 
+                    <input value={message}
+                           type="text"
+                           placeholder="Type a message..." 
+                           onChange={ (e) => { setMessage(e.target.value) } }
+                           onKeyPress={ (e) => e.key === 'Enter' ? sendMessage(e) : null } 
                     />
-                    <button type='submit'
+                    <button 
                             onClick={ (e) => sendMessage(e) }
                     >
                         Envoyer
