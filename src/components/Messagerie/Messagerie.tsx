@@ -9,7 +9,7 @@ const Messagerie = () => {
     const [room, setRoom]          :any     = useState('');
     const [message, setMessage]    :any     = useState('');
     const [messages, setMessages]  :any     = useState([]);
-    const ENDPOINT                 :string  = 'http://localhost:5000/';
+    const ENDPOINT                 :string  = 'localhost:5000';
     const Location                 :any     = queryString.parse(document.location.search);
 
 
@@ -18,8 +18,8 @@ const Messagerie = () => {
     useEffect(() => {
 
         const { name, room }  = queryString.parse(document.location.search);
-        socket                = io(ENDPOINT);
-
+        socket                = io(ENDPOINT, { transports: ['polling', 'websocket'] });
+        
 
         setName(name);
         setRoom(room);
