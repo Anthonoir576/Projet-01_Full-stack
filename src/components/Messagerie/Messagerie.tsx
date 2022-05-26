@@ -5,10 +5,12 @@ let    socket :any;
 
 const Messagerie = () => {
 
-    const [name, setName] :any     = useState('');
-    const [room, setRoom] :any     = useState('');
-    const ENDPOINT        :string  = 'http://localhost:5000/';
-    const Location        :any     = queryString.parse(document.location.search);
+    const [name, setName]          :any     = useState('');
+    const [room, setRoom]          :any     = useState('');
+    const [message, setMessage]    :any     = useState('');
+    const [messages, setMessages]  :any     = useState([]);
+    const ENDPOINT                 :string  = 'http://localhost:5000/';
+    const Location                 :any     = queryString.parse(document.location.search);
 
 
 
@@ -34,14 +36,32 @@ const Messagerie = () => {
 
     }, [ENDPOINT, Location]);
 
+    useEffect(() => {
+        socket.on('message', (message? :any) => {
+            setMessages([...messages, message]);
+        });
+    }, [messages]);
 
+    const sendMessage = (e? :any) => {
 
-
+    };
 
     return (
-        <div>
-            Messagerie
-        </div>
+        <>
+            <div className='read-message-container'>
+                <div className='read-message'>
+                    <input value={message} 
+                        onChange={ e =>  setMessage(e.target.value) }
+                        onKeyPress={ e => e.key === 'Enter' ? sendMessage(e) : null } 
+                    />
+                    <button type='submit'
+                            onClick={ e => sendMessage(e) }
+                    >
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+        </>
     );
 };
 
