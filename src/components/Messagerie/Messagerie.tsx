@@ -22,7 +22,9 @@ const Messagerie = () => {
         setName(name);
         setRoom(room);
         
-        socket.emit('join', { name: name, room: room });
+        socket.emit('join', { name: name, room: room }, ({ error }) => {
+            alert(error);
+        });
 
     }, [ENDPOINT, Location]);
 
