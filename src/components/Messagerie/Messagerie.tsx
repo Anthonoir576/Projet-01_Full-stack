@@ -1,7 +1,7 @@
 import React, {useState, useEffect }  from 'react';
 import queryString                    from 'query-string';
 import io                             from 'socket.io-client';
-let socket :any;
+let    socket :any;
 
 const Messagerie = () => {
 
@@ -22,6 +22,8 @@ const Messagerie = () => {
         setName(name);
         setRoom(room);
         
+        socket.emit('join', { name: name, room: room });
+
     }, [ENDPOINT, Location]);
 
 
