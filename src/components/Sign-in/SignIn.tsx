@@ -35,7 +35,7 @@ const SignIn = () => {
                                }} 
                         />
                     </div>
-                    <div className='sign-in-flex  input-2'>
+                    <div className='sign-in-flex input-2'>
                         <label htmlFor="sign-in-room">
                             <strong>
                                 &gt;.&thinsp;
