@@ -5,24 +5,28 @@ let socket :any;
 
 const Messagerie = () => {
 
-    const [name, setName] :any = useState('');
-    const [room, setRoom] :any = useState('');
-    const ENDPOINT             = 'http://localhost:5000/';
-    const Location             = queryString.parse(document.location.search);
+    const [name, setName] :any     = useState('');
+    const [room, setRoom] :any     = useState('');
+    const ENDPOINT        :string  = 'http://localhost:5000/';
+    const Location        :any     = queryString.parse(document.location.search);
+
+
+
 
     useEffect(() => {
 
-        const { name, room } = queryString.parse(document.location.search);
-        
+        const { name, room }  = queryString.parse(document.location.search);
+        socket                = io(ENDPOINT);
 
-        socket = io(ENDPOINT);
 
         setName(name);
         setRoom(room);
-
-        // console.log(socket);
         
     }, [ENDPOINT, Location]);
+
+
+
+
 
     return (
         <div>
