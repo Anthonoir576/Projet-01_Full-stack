@@ -2,8 +2,9 @@ import React, {useState, useEffect }  from 'react';
 import queryString                    from 'query-string';
 import io                             from 'socket.io-client';
 
-let    socket                  :any;
 const ENDPOINT                 :any  = 'http://localhost:5000';
+let    socket                  :any;
+
 
 const Messagerie = () => {
 
@@ -14,7 +15,7 @@ const Messagerie = () => {
     const [messages, setMessages]  :any     = useState([]);
     const localisation             :any     = document.location.search;
 
-
+    
     useEffect(() => {
 
         const { name, room }  = queryString.parse(document.location.search);
@@ -29,14 +30,14 @@ const Messagerie = () => {
         setName(name);
        
         
-        socket.emit('join', { name, room }, (error) => {
+        socket.emit('join', { name, room }, (error? :any) => {
             if(error) {
                 // alert(error);
                 console.log(error);
             };
         });
 
-    }, [localisation]);
+    }, [ENDPOINT, localisation]);
 
     useEffect(() => {
         socket.on('message', message => {
