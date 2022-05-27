@@ -51,10 +51,10 @@ const SignIn = () => {
                                 }} 
                         />
                     </div>
-                    <NavLink to={`messagerie?name=${name}&room=${room}`}
-                             onClick={(event? :any) => {
+                    <NavLink to={`/messagerie?name=${name}&room=${room}`}
+                             onClick={(e? :any) => {
                                 if (!name || !room) {
-                                    event.preventDefault();
+                                    e.preventDefault();
                                 } else {
                                     return null;
                                 };
