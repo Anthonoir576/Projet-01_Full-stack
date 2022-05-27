@@ -31,10 +31,7 @@ const Messagerie = () => {
        
         
         socket.emit('join', { name, room }, (error? :any) => {
-            if(error) {
-                // alert(error);
-                console.log(error);
-            };
+            if(error) console.log(error);
         });
 
     }, [ENDPOINT, localisation]);
