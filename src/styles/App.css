@@ -188,15 +188,16 @@ footer.footer strong {
 }
 
 .read-message-container input {
+  padding: 0 10px;
   height                   : 30px;
   color: #33FF33;
-  background               : transparent;
+  background               : rgba(255, 255, 255, 0.034);
   border                   : transparent;
   font-family              : 'Roboto Mono', monospace;
   text-transform           : uppercase;
 }
 .read-message-container input:focus {
-  background               : transparent;
+  background               : rgba(255, 255, 255, 0.034);
   border                   : transparent;
   outline                  : none;
 }
