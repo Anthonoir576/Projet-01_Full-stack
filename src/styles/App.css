@@ -175,3 +175,39 @@ footer.footer strong {
   letter-spacing           : 2.5px;
 }
 /* -------------------------------------- */
+
+
+
+/* ------------   Messages   ------------ */
+.read-message-container {
+  text-align               : center;
+}
+.read-message-container button,
+.read-message-container input {
+  width                    : 100%;
+}
+
+.read-message-container input {
+  height                   : 30px;
+  color: #33FF33;
+  background               : transparent;
+  border                   : transparent;
+  font-family              : 'Roboto Mono', monospace;
+  text-transform           : uppercase;
+}
+.read-message-container input:focus {
+  background               : transparent;
+  border                   : transparent;
+  outline                  : none;
+}
+.read-message-container button {
+  cursor                   : pointer;
+  height                   : 70px;
+  background               : #66FF66;
+  box-shadow               :  0 0 20px 0px#33ff332d;
+  font-size                : 20px;
+  font-weight              : 600;
+  letter-spacing           : 2px;
+}
+
+/* -------------------------------------- */
