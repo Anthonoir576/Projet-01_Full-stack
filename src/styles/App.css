@@ -201,6 +201,12 @@ footer.footer strong {
   border                   : transparent;
   outline                  : none;
 }
+.read-message-container input::placeholder {
+  color                    : rgba(255, 255, 255, 0.945);
+  text-transform           : capitalize;
+  letter-spacing           : .5px;
+}
+
 .read-message-container button {
   cursor                   : pointer;
   height                   : 70px;

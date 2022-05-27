@@ -51,14 +51,17 @@ const SignIn = () => {
                                 }} 
                         />
                     </div>
-                    <NavLink to={`/messagerie?name=${name}&room=${room}`}
-                             onClick={(e? :any) => {
-                                if (!name || !room) {
-                                    e.preventDefault();
-                                } else {
-                                    return null;
-                                };
-                             }}
+                        <NavLink onClick={(e? :any) => {
+                                    if (!name || !room) {
+                                        e.preventDefault();
+                                    } else {
+                                        return null;
+                                    };
+                                  }
+                                 }
+                                to={
+                                    `/messagerie?name=${name}&room=${room}`
+                                   }
                     >
                         <button type='submit' className='btn-submit-form'>
                             Se connecter

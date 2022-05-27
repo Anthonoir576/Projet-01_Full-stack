@@ -12,15 +12,17 @@ const Messagerie = () => {
     const [message, setMessage]    :any     = useState('');
     const [users, setUsers]        :any     = useState('');
     const [messages, setMessages]  :any     = useState([]);
-    const localisation             :any     = queryString.parse(document.location.search);
-
-
+    const localisation             :any     = document.location.search;
 
 
     useEffect(() => {
 
         const { name, room }  = queryString.parse(document.location.search);
         socket                = io(ENDPOINT);
+
+
+        console.log(document.location.search);
+        console.log(document.location);
         
 
         setRoom(room);
@@ -34,7 +36,7 @@ const Messagerie = () => {
             };
         });
 
-    }, [ENDPOINT, localisation]);
+    }, [localisation]);
 
     useEffect(() => {
         socket.on('message', message => {
