@@ -181,6 +181,9 @@ footer.footer strong {
 /* ------------   Messages   ------------ */
 .read-message-container {
   text-align               : center;
+  margin                   : 25px;
+  border                   : 1px solid #66FF66;
+  border-radius            : 3px;
 }
 .read-message-container button,
 .read-message-container input {
@@ -190,7 +193,7 @@ footer.footer strong {
 .read-message-container input {
   padding: 0 10px;
   height                   : 30px;
-  color: #33FF33;
+  color                    : #33FF33;
   background               : rgba(255, 255, 255, 0.034);
   border                   : transparent;
   font-family              : 'Roboto Mono', monospace;
@@ -209,12 +212,43 @@ footer.footer strong {
 
 .read-message-container button {
   cursor                   : pointer;
-  height                   : 70px;
+  margin                   : 0 auto;
+  height                   : 50px;
   background               : #66FF66;
   box-shadow               :  0 0 20px 0px#33ff332d;
   font-size                : 20px;
   font-weight              : 600;
   letter-spacing           : 2px;
+}
+
+/* -------------------------------------- */
+
+
+
+/* ---------  Messages infobar  --------- */
+.infobar {
+  display                  : flex;
+  justify-content          : space-between;
+  padding                  : 5px 20px 10px 20px;
+  background               : #66FF66;
+  color                    : black;
+  font-family              : 'Roboto Mono', monospace;
+}
+
+.infobar p {
+  margin                   : 0;
+}
+
+.close-infobar {
+  display                  : block;
+  color                    : black;
+  cursor                   : pointer;
+  font-weight              : 900;
+  text-decoration          : none;
+}
+
+.infobar em {
+  color                    : rgb(141, 40, 40);
 }
 
 /* -------------------------------------- */

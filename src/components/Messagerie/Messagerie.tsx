@@ -1,6 +1,8 @@
 import React, {useState, useEffect }  from 'react';
 import queryString                    from 'query-string';
 import io                             from 'socket.io-client';
+import InfoBar                        from '../onglet-information/InfoBar';
+
 
 const ENDPOINT                 :any  = 'http://localhost:5000';
 let    socket                  :any;
@@ -35,6 +37,7 @@ const Messagerie = () => {
             if(error) console.log(error);
         });
 
+
     }, [ENDPOINT, localisation]);
 
     useEffect(() => {
@@ -63,9 +66,10 @@ const Messagerie = () => {
         <>
             <div className='read-message-container'>
                 <div className='read-message'>
+                    <InfoBar />
                     <input value={message}
                            type="text"
-                           placeholder="Votre message..." 
+                           placeholder=" Votre message..." 
                            onChange={ (e) => { setMessage(e.target.value) } }
                            onKeyPress={ (e) => e.key === 'Enter' ? sendMessage(e) : null } 
                     />
