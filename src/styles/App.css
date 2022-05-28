@@ -226,6 +226,10 @@ footer.footer strong {
 
 
 /* ---------  Messages infobar  --------- */
+.infobar-container {
+  box-shadow               :  0 0 20px 0px#33ff33cc;
+}
+
 .infobar {
   display                  : flex;
   justify-content          : space-between;
