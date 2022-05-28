@@ -2,7 +2,7 @@ import React, {useState, useEffect }  from 'react';
 import queryString                    from 'query-string';
 import io                             from 'socket.io-client';
 import InfoBar                        from '../onglet-information/InfoBar';
-
+import Send                           from '../onglet-send/Send';
 
 const ENDPOINT                 :any  = 'http://localhost:5000';
 let    socket        
@@ -69,17 +69,7 @@ const Messagerie = () => {
             <div className='read-message-container'>
                 <div className='read-message'>
                     <InfoBar room={room} />
-                    <input value={message}
-                           type="text"
-                           placeholder=" Votre message..." 
-                           onChange={ (e) => { setMessage(e.target.value) } }
-                           onKeyPress={ (e) => e.key === 'Enter' ? sendMessage(e) : null } 
-                    />
-                    <button 
-                            onClick={ (e) => sendMessage(e) }
-                    >
-                        Envoyer
-                    </button>
+                    <Send message={message} setMessage={setMessage} sendMessage={sendMessage} />
                 </div>
             </div>
         </>
