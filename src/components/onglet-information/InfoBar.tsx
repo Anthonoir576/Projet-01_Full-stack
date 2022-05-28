@@ -12,7 +12,7 @@ const InfoBar: React.FC<{room:string}> = ( {room} ) => {
     const newUrl         = url[1].split('&');
     const finalUrl       = newUrl[1].split('=');
 
-
+  
     console.log('-- URL --');
     console.log(finalUrl[1]);
     console.log('---------');

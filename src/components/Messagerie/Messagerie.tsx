@@ -69,7 +69,7 @@ const Messagerie = () => {
             <div className='read-message-container'>
                 <div className='read-message'>
                     <InfoBar room={room} />
-                    <Feed    name={name} />
+                    <Feed    name={name} messages={messages} />
                     <Send    message={message} 
                              setMessage={setMessage} 
                              sendMessage={sendMessage} 
