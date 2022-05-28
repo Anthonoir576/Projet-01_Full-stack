@@ -5,7 +5,8 @@ import InfoBar                        from '../onglet-information/InfoBar';
 
 
 const ENDPOINT                 :any  = 'http://localhost:5000';
-let    socket                  :any;
+let    socket        
+          :any;
 
 
 const Messagerie = () => {
@@ -16,6 +17,7 @@ const Messagerie = () => {
     const [users, setUsers]        :any     = useState('');
     const [messages, setMessages]  :any     = useState([]);
     const localisation             :any     = document.location.search;
+
 
     
     useEffect(() => {
@@ -66,7 +68,7 @@ const Messagerie = () => {
         <>
             <div className='read-message-container'>
                 <div className='read-message'>
-                    <InfoBar />
+                    <InfoBar room={room} />
                     <input value={message}
                            type="text"
                            placeholder=" Votre message..." 

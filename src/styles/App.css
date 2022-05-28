@@ -248,7 +248,12 @@ footer.footer strong {
 }
 
 .infobar em {
+  display                  : inline-block;
+  margin-left              : 2px;
   color                    : rgb(141, 40, 40);
+  text-decoration          : underline;
+  font-size                : 13px;
+  transform                : translateY(1.2px);
 }
 
 /* -------------------------------------- */
