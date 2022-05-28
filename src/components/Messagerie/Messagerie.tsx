@@ -1,8 +1,9 @@
 import React, {useState, useEffect }  from 'react';
 import queryString                    from 'query-string';
 import io                             from 'socket.io-client';
+import { useLocation } from 'react-router-dom';
 
-const ENDPOINT                 :any  = 'http://localhost:5000';
+const ENDPOINT                 :any  = 'localhost:5000';
 let    socket                  :any;
 
 
@@ -21,6 +22,7 @@ const Messagerie = () => {
         const { name, room }  = queryString.parse(document.location.search);
         socket                = io(ENDPOINT);
 
+        
 
         console.log(document.location.search);
         console.log(document.location);
