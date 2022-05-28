@@ -1,12 +1,12 @@
 import React, {useState, useEffect }  from 'react';
 import queryString                    from 'query-string';
 import io                             from 'socket.io-client';
-import InfoBar                        from '../onglet-information/InfoBar';
-import Send                           from '../onglet-send/Send';
+import InfoBar                        from '../Onglet-information/InfoBar';
+import Send                           from '../Onglet-send/Send';
+import Feed                           from '../Feed/Feed';
 
 const ENDPOINT                 :any  = 'http://localhost:5000';
-let    socket        
-          :any;
+let   socket                   :any;
 
 
 const Messagerie = () => {
@@ -69,7 +69,11 @@ const Messagerie = () => {
             <div className='read-message-container'>
                 <div className='read-message'>
                     <InfoBar room={room} />
-                    <Send message={message} setMessage={setMessage} sendMessage={sendMessage} />
+                    <Feed    name={name} />
+                    <Send    message={message} 
+                             setMessage={setMessage} 
+                             sendMessage={sendMessage} 
+                    />
                 </div>
             </div>
         </>
