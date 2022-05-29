@@ -5,7 +5,7 @@ import InfoBar                        from '../Onglet-information/InfoBar';
 import Send                           from '../Onglet-send/Send';
 import Feed                           from '../Feed/Feed';
 
-const ENDPOINT                 :any  = 'http://localhost:5000';
+const ENDPOINT                 :any  = 'localhost:5000';
 let   socket                   :any;
 
 
@@ -43,8 +43,8 @@ const Messagerie = () => {
     }, [ENDPOINT, localisation]);
 
     useEffect(() => {
-        socket.on('message', message => {
-            setMessages(messages => [...messages, message]);
+        socket.on('message', (message :any) => {
+            setMessages((messages :any) => [...messages, message]);
         });
         socket.on("roomData", ({ users }) => {
             setUsers(users);

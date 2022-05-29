@@ -17,7 +17,6 @@ function App() {
     <BrowserRouter>
       <Title />
       <Routes>
-        {/* <Route  path='*'            element={ <NoPage     /> } /> */}
         <Route  path='*'            element={ <SignIn     /> } />
         <Route  path='/messagerie'  element={ <Messagerie /> } />
       </Routes>
