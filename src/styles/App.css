@@ -276,7 +276,24 @@ footer.footer strong {
 
 
 /* -----------  Messages BOX  ------------ */
+.message-container {
+text-align                 : left;
+font-family                : 'Roboto Mono', monospace;
+}
+.message-txt {
+  margin-top               : 0;
+  font-weight              : 100;
+  /* font-style               : italic; */
+}
 
-
+.author-message {
+  font-weight              : 900;
+}
+.author-message em {
+  font-size: 16px;
+  margin: 0 2px;
+  font-style               : normal;
+  color                    : rgb(231, 47, 47);
+}
 
 /* --------------------------------------- */
