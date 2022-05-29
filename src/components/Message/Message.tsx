@@ -33,11 +33,11 @@ const Message: React.FC<{ name: any; message: any }> = ( {name, message } ) => {
 
 
 
-    if (finalUser === trimName) {
+    if (finalUser === message.user) {
       console.log('-- VRAI --');
       userActiveSend = true;
       console.log(userActiveSend);
-    } else if (finalUser !== trimName) {
+    } else if (finalUser !== message.user) {
       userActiveSend = false;
       console.log('-- FAUX --');
       console.log(userActiveSend);
@@ -47,16 +47,16 @@ const Message: React.FC<{ name: any; message: any }> = ( {name, message } ) => {
     
     return userActiveSend ? (
       <div className="message-container">
-        <p className="author-message">&gt;.&thinsp; user<em>@</em>{message.user} :</p>
+        <p className="author-message my-message">&gt;.&thinsp; user<em>@</em>{message.user} :</p>
         <div className="message-send">
-          <p className="message-txt my-message">{message.text}</p>
+          <p className="message-txt my-message">&thinsp;&thinsp;&thinsp;&thinsp;{message.text}</p>
         </div>
       </div>
     ) : (
       <div className="message-container">
-        <p className="author-message">@{message.user}</p>
+        <p className="author-message other-message">&gt;.&thinsp; user<em>@</em>{message.user} :</p>
         <div className="message-send">
-          <p className="message-txt other-message">{message.text}</p>
+          <p className="message-txt other-message">&thinsp;&thinsp;&thinsp;&thinsp;{message.text}</p>
         </div>
       </div>
     );
