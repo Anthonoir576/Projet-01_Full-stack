@@ -281,7 +281,7 @@ text-align                 : left;
 font-family                : 'Roboto Mono', monospace;
 }
 .message-txt {
-  margin-top               : 0;
+  margin                   : 0 0 5px 0;
   font-weight              : 100;
   /* font-style               : italic; */
 }
@@ -306,10 +306,20 @@ font-family                : 'Roboto Mono', monospace;
   color                    : #66FF66;
   text-shadow              : 0 0 10px #33FF33;
 }
+#root .message-container .my-message.author-message {
+  text-shadow              : 1px -1px 10px #33FF33;
+}
+#root .message-container .other-message.author-message {
+  text-shadow              : 1px -1px 10px #ffffff;
+}
+
 
 .message-container.other-message-container {
   text-align              : right;
 }
 
+.message-separation {
+  border-color            : #33ff3327;
+}
 
 /* --------------------------------------- */

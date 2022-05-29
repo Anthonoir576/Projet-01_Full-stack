@@ -58,6 +58,7 @@ const Message: React.FC<{ name: any; message: any }> = ( { name, message } ) => 
         <div className="message-send">
           <p className="message-txt other-message">&thinsp;&thinsp;&thinsp;&thinsp;{message.text}</p>
         </div>
+        <hr className="message-separation" />
       </div>
     );
 };
