@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom";
 const Message: React.FC<{ name: any; message: any }> = ( { name, message } ) => {
 
     let userActiveSend :boolean = false;
-    const trimName              = name.trim().toLowerCase();
 
     // -- name in url de lutilisateur en cour --
     // -----------------------------------------
@@ -16,31 +15,10 @@ const Message: React.FC<{ name: any; message: any }> = ( { name, message } ) => 
     const finalUser             = user2[1].trim().toLowerCase();
     // -----------------------------------------
 
-    // -------------   TEST    -----------------
-    // -----------------------------------------
-    console.log('----URL NAME ----');
-    console.log(finalUser);
-    console.log('----------');
-    console.log('--- NAME DINAMIQUE-------');
-    console.log(trimName);
-    console.log('----------');
-    console.log('--- message ----');
-    console.log(message);
-    console.log(message.text);
-    console.log(message.user);
-    console.log('----------');
-    // -----------------------------------------
-
-
-
     if (finalUser === message.user) {
-      console.log('-- VRAI --');
       userActiveSend = true;
-      console.log(userActiveSend);
     } else if (finalUser !== message.user) {
       userActiveSend = false;
-      console.log('-- FAUX --');
-      console.log(userActiveSend);
     };
   
 
@@ -56,6 +34,7 @@ const Message: React.FC<{ name: any; message: any }> = ( { name, message } ) => 
             &thinsp;&thinsp;&thinsp;&thinsp;{message.text}
           </p>
         </div>
+        <hr className="message-separation" />
       </div>
     ) : (
       <div className="message-container other-message-container">
