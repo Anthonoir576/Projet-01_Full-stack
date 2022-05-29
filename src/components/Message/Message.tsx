@@ -53,7 +53,7 @@ const Message: React.FC<{ name: any; message: any }> = ( { name, message } ) => 
         </div>
       </div>
     ) : (
-      <div className="message-container">
+      <div className="message-container other-message-container">
         <p className="author-message other-message">&gt;.&thinsp; user<em>@</em>{message.user} :</p>
         <div className="message-send">
           <p className="message-txt other-message">&thinsp;&thinsp;&thinsp;&thinsp;{message.text}</p>
