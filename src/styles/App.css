@@ -59,6 +59,7 @@ h1 {
   font-weight              : 700;
   text-align               : center;
   text-transform           : uppercase;
+  overflow-Y               : hidden;
 }
 h1 svg {
   transform                : translate(0px,4px);
