@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 
 
-const Message: React.FC<{ name: any; message: any }> = ( {name, message } ) => {
+const Message: React.FC<{ name: any; message: any }> = ( { name, message } ) => {
 
     let userActiveSend :boolean = false;
     const trimName              = name.trim().toLowerCase();
