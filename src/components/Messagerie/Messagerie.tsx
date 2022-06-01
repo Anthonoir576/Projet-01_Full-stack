@@ -5,7 +5,7 @@ import InfoBar                        from '../Onglet-information/InfoBar';
 import Send                           from '../Onglet-send/Send';
 import Feed                           from '../Feed/Feed';
 
-const ENDPOINT                 :any  = 'http://localhost:5000';
+const ENDPOINT                 :any  = 'https://falvo-enterprise-chat-v1.herokuapp.com/'; // http://localhost:5000
 let   socket                   :any;
 
 
